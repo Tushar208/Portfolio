@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="shortcut icon" href="img/m.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Exo+2:wght@500&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!--Intro Section-->
+    <section class="intro">
+      <nav>
+        <div class="burger" onclick="burgerMenu()"><div></div><div></div><div></div></div>
+        <span class="logo"><a href="#">WebArt</a></span>
+        <ul class="mainNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Hire Me!</a></li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <img src="img/dp.png" alt="display picture" class="fluid">
+        <div class="description">
+          <p class="hello">Hello, I'm Tushar</p>
+          <p class="expert">Expert in Web Design<br>and Development</p>
+          <p class="more">Currently available for web design related projects and colaboration</p>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about">
+      <h1>About Myself</h1>
+      <p>I am Minul Hossain Tushar. I am studying physics. I have a passion for programming. Honestly saying,
+        I don't have an academic degree in this field but I learnt Web Design and
+        Development by myself with the help of online courses and practices. I am
+        confident that I am now an expert in Web Design and Development.
+      </p>
+    </section>
+
+    <!--Skill Section-->
+    <section id="skills" class="skills">
+      <h1>My Skills</h1>
+      <div class="skillRow">
+
+        <div>
+          <div class="card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3><hr>
+            <p>HTML is the backbone of web. It's used to create the skeleton of a web page.</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-bootstrap"></i>
+            <h3>Bootstrap</h3><hr>
+            <p>Bootstrap is a css library. It makes easy to design a web page.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3><hr>
+            <p>CSS is the tool to make the apperance of a website. It's a must for web page design.</p>
+          </div>
+          <div class="card">
+            <img src="img/jquery logo.jpg">
+            <h3>JQuery</h3><hr>
+            <p>JQuery is a JavaScript library. It makes it easy to use JavaScript in web pages.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3><hr>
+            <p>JavaScript is the programming language of web. Browsers can read JavaScript.</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-figma"></i>
+            <h3>Figma</h3><hr>
+            <p>Figma is a Designing tool, especially made for web page design.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services">
+      <h1>Services</h1>
+      <div class="serviceRow">
+
+        <div>
+          <h3>PSD to HTML</h3><hr>
+          <p>I will convert a photoshop file into a webpage.</p>
+        </div>
+
+        <div id="second">
+          <h3>Portfolio Design</h3><hr>
+          <p>I will design personal or institutional portfolio</p>
+        </div>
+
+        <div>
+          <h3>Business Website</h3><hr>
+          <p>I will design webpages for business organizations</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <p>You can contact me via following methods</p>
+      <div>
+        <a href="mailto:minul2017hossain4@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://www.facebook.com/minulh.tushar.5"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copy">Copyright <span>&#169;</span> 2020 Portfolio by Tushar</p>
+    </section>
+
+    <script>
+      function burgerMenu() {
+        var display = document.querySelector('.mainNav').style.display;
+        if (display == '' || display == 'none') {
+          document.querySelector('.mainNav').style.display = 'block';
+        }
+        else {
+          document.querySelector('.mainNav').style.display = 'none';
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/311bac8f6a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
